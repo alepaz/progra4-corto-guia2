@@ -17,3 +17,4 @@ C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto_guia2.Form1.r
 C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto_guia2.Properties.Resources.resources
 C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto-guia2.csproj.GenerateResource.Cache
 C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto-guia2.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto_guia2.Menu.resources

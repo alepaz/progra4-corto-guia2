@@ -16,7 +16,7 @@ namespace Corto_guia2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ejercicio2());
+            Application.Run(new Menu());
         }
     }
 }

@@ -98,6 +98,9 @@ namespace Corto_guia2
             
             //Limpiamos el txt
             limpiar_pantalla();
+
+            //Return focus to the textbox
+            txtNum.Focus();
             
         }
 
