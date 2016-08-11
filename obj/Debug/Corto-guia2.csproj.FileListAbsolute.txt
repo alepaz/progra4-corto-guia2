@@ -1,0 +1,19 @@
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\bin\Debug\Corto-guia2.exe.config
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\bin\Debug\Corto-guia2.exe
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\bin\Debug\Corto-guia2.pdb
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\obj\Debug\Corto_guia2.Form1.resources
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\obj\Debug\Corto_guia2.Properties.Resources.resources
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\obj\Debug\Corto-guia2.csproj.GenerateResource.Cache
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\obj\Debug\Corto-guia2.exe
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\obj\Debug\Corto-guia2.pdb
+C:\Users\usuario\AppData\Local\Temporary Projects\Corto-guia2\obj\Debug\Corto_guia2.Ejercicio2.resources
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\bin\Debug\Corto-guia2.exe.config
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto-guia2.exe
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto-guia2.pdb
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\bin\Debug\Corto-guia2.exe
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\bin\Debug\Corto-guia2.pdb
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto_guia2.Ejercicio2.resources
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto_guia2.Form1.resources
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto_guia2.Properties.Resources.resources
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto-guia2.csproj.GenerateResource.Cache
+C:\Users\usuario\Downloads\Corto-guia2\Corto-guia2\obj\Debug\Corto-guia2.csprojResolveAssemblyReference.cache
