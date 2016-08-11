@@ -17,6 +17,8 @@ namespace Corto_guia2
 
         public int cont = 0;
 
+        public int contFilas = -1;
+
         //Bandera publica si todos los datos estan correctos
         public bool bandera = true;
 
@@ -50,23 +52,25 @@ namespace Corto_guia2
                 //Boton dira finalizar
                 if (cont == 1)
                 {
+                    //Cont 
                     dataGridView1.Rows.Insert(0, txtNum.Text);
+                    contFilas++;
                 }else if (cont == 2) {
-                    dataGridView1.Rows.Insert(0, txtNum.Text);
+                    dataGridView1[1, contFilas].Value = txtNum.Text;
                 }else if (cont == 3){
                     btnCalcular.Text = "Finalizar";
-                    dataGridView1.Rows.Insert(0, txtNum.Text);
+                    dataGridView1[2, contFilas].Value = txtNum.Text;
                 }
 
             }
             else if (bandera && cont < 4)
             {
-                dataGridView1.Rows.Insert(0, txtNum.Text);
+                dataGridView1[3, contFilas].Value = txtNum.Text;
 
                 promedio = Num1 + Num2 + Num3 + Num4;
                 promedio = promedio / 4;
 
-                dataGridView1.Rows.Insert(0, promedio.ToString());
+                dataGridView1[4, contFilas].Value = promedio.ToString();
 
                 MessageBox.Show("El promedio es de: " + promedio.ToString());
 
@@ -77,8 +81,7 @@ namespace Corto_guia2
                 desviacion = desviacion / 4;
                 desviacion = Math.Sqrt(desviacion);
 
-                dataGridView1.Rows.Insert(0, promedio.ToString());
-
+                dataGridView1[5, contFilas].Value = desviacion.ToString();
                 MessageBox.Show("La desviación es de: " + desviacion.ToString());
 
                 //Restablecemos variables para siguiente proceso
