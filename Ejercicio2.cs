@@ -13,11 +13,13 @@ namespace Corto_guia2
     public partial class Ejercicio2 : Form
     {
         //Instanciamos las variables nums
-        public double Num1, Num2, Num3, Num4, promedio, desviacion;
+        private double Num1, Num2, Num3, Num4, promedio, desviacion;
 
-        public int cont = 0;
+        //Contador de numero actual
+        private int cont = 0;
 
-        public int contFilas = -1;
+        //Contador para filas
+        public int contFilas = 0;
 
         //Bandera publica si todos los datos estan correctos
         public bool bandera = true;
@@ -52,35 +54,38 @@ namespace Corto_guia2
                 //Boton dira finalizar
                 if (cont == 1)
                 {
-                    //Cont 
-                    dataGridView1.Rows.Insert(0, txtNum.Text);
-                    contFilas++;
+                    //Ingresamos el primer numero y creamos la fila
+                    dataGridView1.Rows.Insert(contFilas, txtNum.Text);
                 }else if (cont == 2) {
+                    //Ingresamos el segundo numero al datagrivview
                     dataGridView1[1, contFilas].Value = txtNum.Text;
                 }else if (cont == 3){
                     btnCalcular.Text = "Finalizar";
+                    //Ingresamos el terver numero al datagrivview
                     dataGridView1[2, contFilas].Value = txtNum.Text;
                 }
 
             }
             else if (bandera && cont < 4)
             {
+                //Ingresamos el cuarto numero al datagrivview
                 dataGridView1[3, contFilas].Value = txtNum.Text;
 
+                //Calculo del promedio
                 promedio = Num1 + Num2 + Num3 + Num4;
                 promedio = promedio / 4;
 
+                //Ingresamos el promedio al dataridview
                 dataGridView1[4, contFilas].Value = promedio.ToString();
 
                 MessageBox.Show("El promedio es de: " + promedio.ToString());
 
-                desviacion = Math.Pow((Num1 - promedio), 2);
-                desviacion += Math.Pow((Num2 - promedio), 2);
-                desviacion += Math.Pow((Num3 - promedio), 2);
-                desviacion += Math.Pow((Num4 - promedio), 2);
+                //Calculo de la desviacion
+                desviacion = getDesvPart(Num1, promedio) + getDesvPart(Num2, promedio) + getDesvPart(Num3, promedio) + getDesvPart(Num4, promedio);
                 desviacion = desviacion / 4;
                 desviacion = Math.Sqrt(desviacion);
 
+                //Ingresamos la desviacion al dataridview
                 dataGridView1[5, contFilas].Value = desviacion.ToString();
                 MessageBox.Show("La desviación es de: " + desviacion.ToString());
 
@@ -88,10 +93,18 @@ namespace Corto_guia2
                 btnCalcular.Text = "Agregar";
                 cont = 0;
                 lblnum.Text = "Número: " + (cont + 1).ToString();
+                contFilas++;
             }
-
+            
+            //Limpiamos el txt
             limpiar_pantalla();
             
+        }
+
+        public double getDesvPart(double num, double promedio) {
+
+            //Regresa (num - promedio)^2
+            return Math.Pow((num - promedio), 2);
         }
 
         public double obtener_valor(TextBox t1)
@@ -99,10 +112,13 @@ namespace Corto_guia2
             //numerico
             double valor = 0;
 
+            //Si el control esta vacio
             if (t1.Text.Length > 0)
             {
+                //Si no se puede convertir a double (caracteres)
                 if (double.TryParse(t1.Text, out valor))
                 {
+                    //Si el numero ingresado esta fuera del rango
                     if (int.Parse(t1.Text) >= 0 && int.Parse(t1.Text) <= 10)
                     {
                         valor = Convert.ToDouble(t1.Text);
@@ -118,7 +134,6 @@ namespace Corto_guia2
                     bandera = false;
                     MessageBox.Show("El valor debe ser numerico");
                 }
-
             }
             else
             {

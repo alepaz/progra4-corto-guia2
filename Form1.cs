@@ -52,11 +52,21 @@ namespace Corto_guia2
             //numerico
             double valor = 0;
 
+            //Si el control esta vacio
             if (t1.Text.Length > 0)
             {
+                //Si el control tiene caracteres
                 if (double.TryParse(t1.Text, out valor))
                 {
-                    valor = Convert.ToDouble(t1.Text);
+                    if (double.Parse(t1.Text)>0)
+                    {
+                        valor = Convert.ToDouble(t1.Text);
+                    }
+                    else 
+                    { 
+                        bandera = false;
+                        MessageBox.Show("El valor debe >=0");
+                    }
                 }
                 else
                 {
