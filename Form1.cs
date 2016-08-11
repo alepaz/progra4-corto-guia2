@@ -40,10 +40,7 @@ namespace Corto_guia2
                 MessageBox.Show("El resultado de la R equivalente es: " + Resultado.ToString());
 
             }
-            else {
-                MessageBox.Show("Alguno de los datos es incorrecto");
-            }
-
+            
             limpiar_pantalla();
         }
 
@@ -58,7 +55,7 @@ namespace Corto_guia2
                 //Si el control tiene caracteres
                 if (double.TryParse(t1.Text, out valor))
                 {
-                    if (double.Parse(t1.Text)>0)
+                    if (double.Parse(t1.Text)>=0)
                     {
                         valor = Convert.ToDouble(t1.Text);
                     }
